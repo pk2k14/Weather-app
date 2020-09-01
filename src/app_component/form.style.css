@@ -1,16 +1,33 @@
-form{
+form input[name="city"]::-moz-placeholder { /* Firefox 19+ */
+    color:white;
+  }
+
+form input[name="country"]::-moz-placeholder { /* Firefox 19+ */
+    color:white;
+  }
+
+form input[name="city"]::-webkit-input-placeholder  { 
+    color:white;
+  }
+
+form input[name="country"]::-webkit-input-placeholder { 
+    color:white;
+  }
+
+.container form{
     margin-top:3rem;
 }
 
 form input[name="city"],form input[name="country"]{
     background-color: transparent;
-    color:white;
+    color:white !important;
     border:0;
     border-bottom:2px solid whitesmoke;
     border-radius:0
 }
 
 form input:focus{
-    background-color: transparent;
+    background-color: transparent !important;
     box-shadow: none !important;
+    color:white !important;
 }
